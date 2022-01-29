@@ -31,7 +31,7 @@ FG的核心是一个称为[**TextRank**](assets/TextRank-algorithm.pdf)的算法
 - 使用pip进行安装
 
 ```
-pip install nonbot-plugin-fg2
+pip install nonebot-plugin-fg
 ```
 
 - 然后在bot中加载插件
