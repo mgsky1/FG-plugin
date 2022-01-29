@@ -24,7 +24,7 @@ FG的核心是一个称为[**TextRank**](assets/TextRank-algorithm.pdf)的算法
 ## 环境
 
 - Python 3.7+
-- nonebot 2
+- nonebot 2(确保安装[定时任务插件](https://github.com/nonebot/plugin-apscheduler))
 
 ## 安装
 
