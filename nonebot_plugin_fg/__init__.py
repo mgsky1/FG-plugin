@@ -16,20 +16,12 @@
 # under the License.
 
 '''
-@Desc:
+@Desc:初始化类
 @Author: huangzhiyuan
 @Time: 2022/1/27 上午10:27
 @Modify Notes:
 '''
-from nonebot import get_driver
-from nonebot import logger
-from .config import parse_json_conf
-import nonebot_plugin_apscheduler
 
-scheduler = nonebot_plugin_apscheduler.scheduler
-logger.info("FG--apscheduler定时插件已载入")
-sys_config = get_driver().config
-# 解析配置文件
-config_list = parse_json_conf(sys_config.fg_config_location)
-logger.info("FG--配置文件已载入")
+from .core import *
+from .record import *
 

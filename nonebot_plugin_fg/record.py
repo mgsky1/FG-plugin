@@ -23,8 +23,7 @@
 '''
 import nonebot
 import time
-from . import config_list
-from . import sys_config
+from .base import get_config_list, get_sys_config
 from pathlib import Path
 from nonebot import on_message
 from nonebot.rule import Rule
@@ -33,6 +32,9 @@ from .group_rule import GroupRule
 from nonebot.adapters.onebot.v11.event import GroupMessageEvent
 
 group_chat = on_message(rule=Rule(GroupRule()))
+
+config_list = get_config_list()
+sys_config = get_sys_config()
 
 @group_chat.handle()
 async def record(event : GroupMessageEvent):

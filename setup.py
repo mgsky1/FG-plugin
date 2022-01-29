@@ -27,25 +27,26 @@ with open('./README.md', 'r', encoding="utf8") as f:
     long_desc = f.read()
 
 setuptools.setup(
-    name="nonbot-plugin-fg2",
-    version="2.0.0",
+    name="nonebot-plugin-fg",
+    version="2.0.1",
     author="mgsky1",
     author_email="hzy@acmsmu.cn",
     description="一个基于Nonebot2的QQ群每日总结生成插件，可以根据每日的聊天信息生成每日热词",
     long_description=long_desc,
     long_description_content_type="text/markdown",
-    url="https://github.com/mgsky1/FG/tree/nonebot_plugin",
+    url="https://github.com/mgsky1/FG-plugin",
     packages=setuptools.find_packages(),
     install_requires=[
         "networkx==2.6.3",
         "numpy==1.22.1",
-        "scipy==1.7.3"
+        "scipy==1.7.3",
+        "jieba==0.42.1"
     ],
     classifiers=[
         "Programming Language :: Python :: 3.7",
         "License :: OSI Approved :: Apache Software License",
         "Operating System :: OS Independent"
-    ]
-
+    ],
+    package_data={'':['*.txt']}
 )
 

@@ -25,10 +25,12 @@ import re
 import nonebot
 import time
 from nonebot import logger
-from . import config_list
-from . import sys_config
-from . import scheduler
+from .base import get_config_list, get_scheduler, get_sys_config
 from .TextRank4Keyword import TextRank4Keyword
+
+config_list = get_config_list()
+sys_config = get_sys_config()
+scheduler = get_scheduler()
 
 class DailyConclusion:
 

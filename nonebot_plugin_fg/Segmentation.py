@@ -11,8 +11,10 @@ import jieba.posseg as pseg
 import jieba
 import codecs
 import os
-from . import sys_config
+from .base import get_sys_config
 from . import util
+
+sys_config = get_sys_config()
 
 def get_default_stop_words_file():
     d = os.path.dirname(os.path.realpath(__file__))
