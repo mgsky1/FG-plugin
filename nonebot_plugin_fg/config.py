@@ -61,7 +61,7 @@ class GroupModel(BaseModel):
 
 def parse_json_conf(json_conf_path):
     group_config_list = []
-    with open(json_conf_path) as json_conf_file:
+    with open(json_conf_path, 'r', encoding='utf8') as json_conf_file:
         configs = json.load(json_conf_file)
         for config in configs:
             group_config_list.append(GroupModel(**config))
