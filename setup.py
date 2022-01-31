@@ -28,7 +28,7 @@ with open('./README.md', 'r', encoding="utf8") as f:
 
 setuptools.setup(
     name="nonebot-plugin-fg",
-    version="2.0.1",
+    version="2.0.2",
     author="mgsky1",
     author_email="hzy@acmsmu.cn",
     description="一个基于Nonebot2的QQ群每日总结生成插件，可以根据每日的聊天信息生成每日热词",
