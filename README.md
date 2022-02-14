@@ -24,7 +24,8 @@ FG的核心是一个称为[**TextRank**](assets/TextRank-algorithm.pdf)的算法
 ## 环境
 
 - Python 3.7+
-- nonebot 2.0.0b1+(确保安装[定时任务插件](https://github.com/nonebot/plugin-apscheduler))
+- nonebot 2.0.0b1
+- nonebot-plugin-apscheduler 0.1.2
 - [Onebot V11适配器](https://github.com/nonebot/adapter-onebot)
 
 > 其他的适配器我没有测过，因为在代码中`from nonebot.adapters.onebot.v11.event import GroupMessageEvent`，所以感觉如果不用该适配器可能会有问题
