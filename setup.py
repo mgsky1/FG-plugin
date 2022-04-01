@@ -23,7 +23,7 @@
 '''
 import setuptools
 
-with open('./README.md', 'r', encoding="utf8") as f:
+with open('./README.md', 'r', encoding="utf-8") as f:
     long_desc = f.read()
 
 setuptools.setup(
@@ -40,7 +40,10 @@ setuptools.setup(
         "networkx==2.6.3",
         "numpy==1.22.1",
         "scipy==1.7.3",
-        "jieba==0.42.1"
+        "jieba==0.42.1",
+        "nonebot2 >= 2.0.0b2",
+        "nonebot-adapter-onebot >= 2.0.0b1",
+        "nonebot_plugin_apscheduler"
     ],
     classifiers=[
         "Programming Language :: Python :: 3.7",
