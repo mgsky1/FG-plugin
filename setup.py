@@ -43,6 +43,7 @@ setuptools.setup(
         "jieba==0.42.1",
         "nonebot2 >= 2.0.0b2",
         "nonebot-adapter-onebot >= 2.0.0b1"
+        "nonebot_plugin_apscheduler"
     ],
     classifiers=[
         "Programming Language :: Python :: 3.7",
