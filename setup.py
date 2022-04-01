@@ -23,7 +23,7 @@
 '''
 import setuptools
 
-with open('./README.md', 'r', encoding="utf8") as f:
+with open('./README.md', 'r', encoding="utf-8") as f:
     long_desc = f.read()
 
 setuptools.setup(
@@ -42,7 +42,7 @@ setuptools.setup(
         "scipy==1.7.3",
         "jieba==0.42.1",
         "nonebot2 >= 2.0.0b2",
-        "nonebot-adapter-onebpt >= 2.0.0b1"
+        "nonebot-adapter-onebot >= 2.0.0b1"
     ],
     classifiers=[
         "Programming Language :: Python :: 3.7",
